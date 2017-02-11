@@ -52,6 +52,30 @@ struct Note : CustomStringConvertible {
     }()
 
     
+    //MARK: - Detection
+    
+    static func possibleNotes(for frequency: Double) -> [Note] {
+        let noteDistances = Note.list.map{ note -> (note: Note, distanceToFrequency: Double) in
+            let distanceToFrequency = abs(note.frequency - frequency)
+            return (note, distanceToFrequency)
+        }
+        
+        let sortedNotes = noteDistances.sorted { note1, note2 in
+            return note1.distanceToFrequency < note2.distanceToFrequency
+        }
+        
+        let first = sortedNotes[0]
+        let second = sortedNotes[1]
+        
+        //if the two notes are the same (ex: D# and Eb), return both
+        if first.distanceToFrequency == second.distanceToFrequency {
+            return [first.note, second.note]
+        } else {
+            return [first.note]
+        }
+    }
+    
+    
     //MARK: - Note Object
     
     let name: String
