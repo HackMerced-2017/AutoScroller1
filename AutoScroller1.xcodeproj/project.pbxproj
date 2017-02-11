@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E607DC21E4F7F93002D7E8B /* Notes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2E607DC11E4F7F93002D7E8B /* Notes.csv */; };
+		2E607DC41E4F7F9F002D7E8B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E607DC31E4F7F9F002D7E8B /* Note.swift */; };
+		2E607DC61E4F807E002D7E8B /* NoteTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E607DC51E4F807E002D7E8B /* NoteTestViewController.swift */; };
 		C12E49D71E4F6F740079632D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E49D61E4F6F740079632D /* AppDelegate.swift */; };
 		C12E49D91E4F6F740079632D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E49D81E4F6F740079632D /* ViewController.swift */; };
 		C12E49DC1E4F6F740079632D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12E49DA1E4F6F740079632D /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E607DC11E4F7F93002D7E8B /* Notes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.csv; sourceTree = "<group>"; };
+		2E607DC31E4F7F9F002D7E8B /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		2E607DC51E4F807E002D7E8B /* NoteTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTestViewController.swift; sourceTree = "<group>"; };
 		C12E49D31E4F6F740079632D /* AutoScroller1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoScroller1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12E49D61E4F6F740079632D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C12E49D81E4F6F740079632D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +60,11 @@
 		C12E49D51E4F6F740079632D /* AutoScroller1 */ = {
 			isa = PBXGroup;
 			children = (
+				2E607DC11E4F7F93002D7E8B /* Notes.csv */,
+				2E607DC31E4F7F9F002D7E8B /* Note.swift */,
 				C12E49D61E4F6F740079632D /* AppDelegate.swift */,
 				C12E49D81E4F6F740079632D /* ViewController.swift */,
+				2E607DC51E4F807E002D7E8B /* NoteTestViewController.swift */,
 				C12E49DA1E4F6F740079632D /* Main.storyboard */,
 				C12E49DD1E4F6F740079632D /* Assets.xcassets */,
 				C12E49DF1E4F6F740079632D /* LaunchScreen.storyboard */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					C12E49D21E4F6F740079632D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FZ89A5SZ7C;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -123,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E607DC21E4F7F93002D7E8B /* Notes.csv in Resources */,
 				C12E49E11E4F6F740079632D /* LaunchScreen.storyboard in Resources */,
 				C12E49DE1E4F6F740079632D /* Assets.xcassets in Resources */,
 				C12E49DC1E4F6F740079632D /* Main.storyboard in Resources */,
@@ -136,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E607DC61E4F807E002D7E8B /* NoteTestViewController.swift in Sources */,
 				C12E49D91E4F6F740079632D /* ViewController.swift in Sources */,
 				C12E49D71E4F6F740079632D /* AppDelegate.swift in Sources */,
+				2E607DC41E4F7F9F002D7E8B /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FZ89A5SZ7C;
 				INFOPLIST_FILE = AutoScroller1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hackmerced.AutoScroller1;
@@ -268,7 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FZ89A5SZ7C;
 				INFOPLIST_FILE = AutoScroller1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hackmerced.AutoScroller1;
