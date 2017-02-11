@@ -26,12 +26,23 @@ class ViewController: UIViewController {
             + userSearchLbl.text!
         
         // songResultsDisplayLbl.text = "lyrics from api here"
-        
-
-        
-        
     }
     
+    
+   /* Ready to be implemented with a UITextView and then Notes
+     @IBAction func autoScroll(_ sender: any) {
+        
+     UIView.animate(withDuration: 2.0, animations: {
+        
+        self.textView.contentOffset = CGPoint(x: 0, y: self.y) }, completion: nil)
+        y += 25
+        let yMax = self.textView.contentSize
+        if(Int(yMax.height/1.5) < y) {
+            y -= 25
+            
+        }
+    }
+    */
     
     
 
