@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var songResultsDisplayLbl: UILabel!
     
     
-    @IBAction func saerchBtn(sender: UIButton) {
+    @IBAction func saerchBtn(_ sender: UIButton) {
         
         songResultsDisplayLbl.text = "you searched for: "
             + userSearchLbl.text!
